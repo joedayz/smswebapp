@@ -12,35 +12,13 @@ pipeline {
             }
         }
 
-        stage('Build') {
-            steps {
-                script {
-                    sh "dotnet restore"
-                    sh "dotnet build --configuration Release"
-                }
-            }
-        }
-
-        stage('Test') {
-            steps {
-                script {
-                    sh "dotnet test --no-restore --configuration Release"
-                }
-            }
-        }
-
-        stage('Publish') {
-            steps {
-                script {
-                    sh "dotnet publish --no-restore --configuration Release --output ./publish"
-                }
-            }
+    stage('SonarQube Analysis') {
+        def scannerHome = tool 'SonarScanner for MSBuild'
+        withSonarQubeEnv() {
+          sh "dotnet ${scannerHome}\\SonarScanner.MSBuild.dll begin /k:\"scandotnetwithjenkins\""
+          sh "dotnet build"
+          sh "dotnet ${scannerHome}\\SonarScanner.MSBuild.dll end"
         }
     }
-
-    post {
-        success {
-            echo 'Build, test, and publish successful!'
-        }
-    }
+    
 }
