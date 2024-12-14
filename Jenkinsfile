@@ -29,7 +29,7 @@ pipeline {
             steps {
                 script {
                     // Running tests
-                    bat "dotnet test --no-restore --configuration Release"
+                    sh "dotnet test --no-restore --configuration Release"
                 }
             }
         }
