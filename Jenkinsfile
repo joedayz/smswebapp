@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOTNET_CLI_HOME = "/usr/local/share/dotnet/dotnet"
+        DOTNET_CLI_HOME = "/usr/local/share/dotnet"
     }
 
     stages {
