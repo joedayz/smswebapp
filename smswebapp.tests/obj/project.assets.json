@@ -1005,19 +1005,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Anushree Mandal\\.nuget\\packages\\": {}
+    "/Users/josediaz/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Takneekigyanguru\\ASP.Net Code\\Project6\\smswebapp.tests\\smswebapp.tests.csproj",
+      "projectUniqueName": "/Users/josediaz/Downloads/smswebapp/smswebapp.tests/smswebapp.tests.csproj",
       "projectName": "smswebapp.tests",
-      "projectPath": "F:\\Takneekigyanguru\\ASP.Net Code\\Project6\\smswebapp.tests\\smswebapp.tests.csproj",
-      "packagesPath": "C:\\Users\\Anushree Mandal\\.nuget\\packages\\",
-      "outputPath": "F:\\Takneekigyanguru\\ASP.Net Code\\Project6\\smswebapp.tests\\obj\\",
+      "projectPath": "/Users/josediaz/Downloads/smswebapp/smswebapp.tests/smswebapp.tests.csproj",
+      "packagesPath": "/Users/josediaz/.nuget/packages/",
+      "outputPath": "/Users/josediaz/Downloads/smswebapp/smswebapp.tests/obj/",
       "projectStyle": "PackageReference",
+      "UsingMicrosoftNETSdk": false,
       "configFilePaths": [
-        "C:\\Users\\Anushree Mandal\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/josediaz/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -1029,8 +1030,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "F:\\Takneekigyanguru\\ASP.Net Code\\Project6\\smswebapp\\smswebapp.csproj": {
-              "projectPath": "F:\\Takneekigyanguru\\ASP.Net Code\\Project6\\smswebapp\\smswebapp.csproj"
+            "/Users/josediaz/Downloads/smswebapp/smswebapp/smswebapp.csproj": {
+              "projectPath": "/Users/josediaz/Downloads/smswebapp/smswebapp/smswebapp.csproj"
             }
           }
         }
@@ -1039,6 +1040,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -1082,7 +1088,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
