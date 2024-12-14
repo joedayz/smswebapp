@@ -8,20 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/Users/josediaz/.nuget/packages/": {}
+    "C:\\Users\\Anushree Mandal\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/josediaz/Downloads/smswebapp/smswebapp/smswebapp.csproj",
+      "projectUniqueName": "F:\\Takneekigyanguru\\ASP.Net Code\\Project6\\smswebapp\\smswebapp.csproj",
       "projectName": "smswebapp",
-      "projectPath": "/Users/josediaz/Downloads/smswebapp/smswebapp/smswebapp.csproj",
-      "packagesPath": "/Users/josediaz/.nuget/packages/",
-      "outputPath": "/Users/josediaz/Downloads/smswebapp/smswebapp/obj/",
+      "projectPath": "F:\\Takneekigyanguru\\ASP.Net Code\\Project6\\smswebapp\\smswebapp.csproj",
+      "packagesPath": "C:\\Users\\Anushree Mandal\\.nuget\\packages\\",
+      "outputPath": "F:\\Takneekigyanguru\\ASP.Net Code\\Project6\\smswebapp\\obj\\",
       "projectStyle": "PackageReference",
-      "UsingMicrosoftNETSdk": false,
       "configFilePaths": [
-        "/Users/josediaz/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Anushree Mandal\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -39,11 +38,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -68,7 +62,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

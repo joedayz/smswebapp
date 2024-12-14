@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        PATH = "/usr/local/share/dotnet:$PATH"
+        DOTNET_CLI_HOME = "C:\\Program Files\\dotnet"
     }
 
     stages {
@@ -15,8 +15,12 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    sh "dotnet restore"
-                    sh "dotnet build --configuration Release"
+                    // Restoring dependencies
+                    //bat "cd ${DOTNET_CLI_HOME} && dotnet restore"
+                    bat "dotnet restore"
+
+                    // Building the application
+                    bat "dotnet build --configuration Release"
                 }
             }
         }
@@ -24,7 +28,8 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    sh "dotnet test --no-restore --configuration Release"
+                    // Running tests
+                    bat "dotnet test --no-restore --configuration Release"
                 }
             }
         }
@@ -32,7 +37,8 @@ pipeline {
         stage('Publish') {
             steps {
                 script {
-                    sh "dotnet publish --no-restore --configuration Release --output ./publish"
+                    // Publishing the application
+                    bat "dotnet publish --no-restore --configuration Release --output .\\publish"
                 }
             }
         }
